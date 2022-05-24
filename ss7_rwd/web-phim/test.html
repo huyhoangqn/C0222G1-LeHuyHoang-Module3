@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang xem hoạt hình trực tuyến</title>
+    <link href="test2.css" rel="stylesheet" type="">
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: 'header header'
+            'header-link header-link'
+            'left-content right-content'
+            'footer footer';
+            grid-template-columns: 30% 70%;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .header-link {
+            grid-area: header-link;
+        }
+
+        .left-content {
+            grid-area: left-content;
+        }
+
+        .right-content {
+            grid-area: right-content;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        @media only screen and (max-width: 425px) {
+            .left-content {
+                display: none;
+            }
+
+            .container {
+                display: grid;
+                grid-template-areas: 'header header'
+                'header-link header-link'
+                'right-content right-content'
+                'footer footer';
+            }
+
+            .header-link {
+                height: 25px;
+                line-height: 25px;
+            }
+
+            .header-link a {
+                width: 50%;
+                font-size: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img alt="logo" class="logo" height="50px" src="img/logo.PNG" width="auto">
+    </div>
+    <div class="header-link">
+        <a href="">Phim hoạt hình</a>
+        <span>|</span>
+        <a href="">Phim hoạt hình yêu thích</a>
+        <span>|</span>
+        <a href="">Nhân vật hoạt hình</a>
+        <span>|</span>
+        <a href="">Góp ý</a>
+    </div>
+    <div class="left-content">
+        <ul class="list-movie">
+            <li>
+                <img onclick="changeLink('https://www.youtube.com/embed/0yOSqdov7kQ')"
+                     src="https://gamek.mediacdn.vn/133514250583805952/2021/6/24/anh-2-16245125227512055130039.png"></a>
+                <p>One piece tập 123</p>
+            </li>
+            <li><img onclick="changeLink('https://www.youtube.com/embed/A6LkU0M1pjs')"
+                     src="https://gamek.mediacdn.vn/133514250583805952/2021/6/24/anh-4-1624512522770684362545.jpg"/></a>
+                <p>One piece tập 456</p>
+            </li>
+            <li><img onclick="changeLink('https://www.youtube.com/embed/s6dPPdfw8Tc')"
+                     src="https://gamek.mediacdn.vn/133514250583805952/2021/6/23/photo-1-1624440568852722075088.jpg"/></a>
+                <p>One piece tập 892</p>
+            </li>
+        </ul>
+    </div>
+    <div class="right-content">
+        <div class="movie">
+            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    id="video-embed"
+                    allowfullscreen frameborder="0"
+                    height="90%" src="https://www.youtube.com/embed/bDnAqG3c6F8"
+                    title="YouTube video player"
+                    width="100%"></iframe>
+            <p>One piece - Tập 685</p>
+        </div>
+    </div>
+    <div class="footer"><b>© 2017 - Thiết kế web bởi trang hoathinhvn.net</b></div>
+</div>
+</body>
+<script>
+    function changeLink(src) {
+        document.getElementById('video-embed').setAttribute('src', src);
+    }
+</script>
+</html>
