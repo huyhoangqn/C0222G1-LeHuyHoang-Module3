@@ -13,13 +13,13 @@
   <body>
   <form action="/discount" method="post">
     <div>
-      <label>mo ta:</label>
-      <input type="text" name="mota" placeholder="nhap mo ta san pham">
+      <label>Description:</label>
+      <input type="text" name="description" placeholder="Enter description ">
       <label>gia:</label>
-      <input type="text" name="gia" placeholder="nhap gia niem yet">
-      <label>ty le chiet khau</label>
-      <input type="text" name="chietkhau" placeholder="nhap ty le chiet khau">
-      <button type="submit">Tinh chiet khau</button>
+      <input type="text" name="price" placeholder="enter price">
+      <label>Discount Price</label>
+      <input type="text" name="discount" placeholder="enter discount">
+      <button type="submit">Calculate</button>
     </div>
   </form>
   </body>

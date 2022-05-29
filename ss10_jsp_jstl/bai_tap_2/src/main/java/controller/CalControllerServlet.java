@@ -25,7 +25,6 @@ public class CalControllerServlet extends HttpServlet {
         }
         writer.println("</html>");
     }
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     }
 }
