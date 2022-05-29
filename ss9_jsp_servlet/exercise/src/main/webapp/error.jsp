@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-
+<img src="https://driversmayin.com/wp-content/uploads/2022/04/How-to-Fix-the-502-Bad-Gateway-Error-in-WordPress.jpg" alt="">
 </body>
 </html>
