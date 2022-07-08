@@ -16,7 +16,6 @@
     <input type="text" name="description" value="${product.description}" /><br>
     <label>price: </label>
     <input type="text" name="manufacturer" value="${product.manufacturer}" /><br>
-
     <input type="submit" value="Update"/>
 </form>
 </body>

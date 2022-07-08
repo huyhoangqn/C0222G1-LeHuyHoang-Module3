@@ -24,4 +24,25 @@ public class UserServiceImpl implements IUserService {
         return userRepository.sort(sort);
     }
 
+    @Override
+    public void delete(int id) {
+        userRepository.delete(id);
+    }
+
+    @Override
+    public void addUser(String name, String email, String country) {
+        userRepository.addUser(name, email, country);
+    }
+
+    @Override
+    public User getUser(int id) {
+        return userRepository.returnUser(id);
+    }
+
+    @Override
+    public void update(int id, String name, String email, String country) {
+        userRepository.update(id, name, email, country);
+    }
+
+
 }
